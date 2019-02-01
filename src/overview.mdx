@@ -1,0 +1,47 @@
+import { Appear } from "mdx-deck";
+import { Image } from "mdx-deck";
+import { FullScreenCode } from "mdx-deck/layouts";
+
+# About Yarn
+
+> Yarn is a package manager for your code. It allows you to use and share code with other developers from around the world. Yarn does this quickly, securely, and reliably so you don’t ever have to worry.
+
+---
+
+# Multi repos, why?
+
+<ul>
+  <Appear>
+    <li>Build only the necessary</li>
+    <li>Clearer subversion history</li>
+    <li>Easier revert 💥</li>
+    <li>1 app > 1 repo</li>
+    <li>1 components ui > 1 repo</li>
+    <li>1 service > 1 repo...</li>
+  </Appear>
+</ul>
+
+---
+
+# Monorepos, why?
+
+<ul>
+  <Appear>
+    <li>Sequential builds</li>
+    <li>Dependecies 💥</li>
+    <li>Versioning</li>
+    <li>Shared services/components/functions...</li>
+  </Appear>
+</ul>
+
+---
+
+export default FullScreenCode;
+
+<Image src={require("file-loader!./images/monorepo-2.png")} />
+
+---
+
+export default FullScreenCode;
+
+<Image src={require("file-loader!./images/monorepo-3.png")} />

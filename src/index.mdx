@@ -1,0 +1,125 @@
+export { default as theme } from "gatsby-mdx-theme";
+import { CodeSurfer } from "mdx-deck-code-surfer";
+import { Image } from "mdx-deck";
+
+# Monorepo with Yarn Workspaces 🤩
+
+---
+
+# About Yarn
+
+> ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013.
+
+---
+
+# Sobre o Prettier
+
+> Is an opinionated code formatter. It supports many languages and integrates with most code editors.
+
+---
+
+<Image
+  src={require("file-loader!./images/prettier.gif")}
+  width={700}
+  height={500}
+/>
+
+---
+
+# AirBnb _styleguide_
+
+> Um dos mais famosos do mundo, e é/foi referência para várias empresas como National Geographic, reddit, e etc.
+
+---
+
+<Image
+  src={require("file-loader!./images/airbnb-style.png")}
+  width={700}
+  height={200}
+/>
+
+---
+
+# Integrando com um Projeto
+
+---
+
+```bash
+npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-prettier
+```
+
+---
+
+Instalando as dependências do styleguide da AirBnb.
+
+```bash
+npx install-peerdeps --dev eslint-config-airbnb
+```
+
+---
+
+# Configurando no Projeto
+
+---
+
+Crie um arquivo chamado `.eslintrc` e outro chamado `.prettierrc` na raiz do projeto
+
+```bash
+touch .eslintrc
+touch .prettierrc
+```
+
+---
+
+```json
+// .eslintrc
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
+}
+```
+
+---
+
+```json
+// .prettierrc
+{
+  "printWidth": 100,
+  "singleQuote": true
+}
+```
+
+---
+
+# Último passo
+
+Configurar o **VSCode**. Entre nas configurações e insira a seguinte linha:
+
+```
+"editor.formatOnSave": true
+```
+
+---
+
+# Plus
+
+`https://github.com/typicode/husky`
+
+> Git hooks made easy
+
+---
+
+# Plus 2
+
+```
+https://gist.github.com/raisiqueira/6aa2694bbab1bc6cd73a86e1a3cd5ff4
+```
+
+> Shell script para automatizar a instalação
+
+---
+
+# The end

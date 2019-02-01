@@ -1,0 +1,95 @@
+import { CodeSurfer } from "mdx-deck-code-surfer";
+import dracula from "prism-react-renderer/themes/dracula";
+
+<CodeSurfer
+  title="Getting start"
+  lang="bash"
+  showNumbers={false}
+  theme={dracula}
+  code={"yarn init -y"}
+  steps={[{ notes: "Run on your terminal" }]}
+/>
+
+---
+
+<CodeSurfer
+  title="Package.json - example"
+  lang="javascript"
+  showNumbers={true}
+  theme={dracula}
+  code={require("!raw-loader!./code-samples/package-example.js")}
+  steps={[
+    { notes: "package.json" },
+    { lines: [8], notes: "The main package are private" },
+    { lines: [9, 10, 11, 12], notes: "Add the workspaces folders" }
+  ]}
+/>
+
+---
+
+# Instaling dependencies
+
+## On root folder
+
+---
+
+<CodeSurfer
+  title="Dependecies on root package"
+  lang="bash"
+  showNumbers={false}
+  theme={dracula}
+  code={"yarn add -D -W typescript@3.2.4"}
+  steps={[{ notes: "package.json" }]}
+/>
+
+---
+
+# Setup the packages
+
+## on the _packages_ folder
+
+```bash
+mkdir jst-ui jst-common
+```
+
+---
+
+<CodeSurfer
+  title="Setup package jst-ui"
+  lang="bash"
+  showNumbers={false}
+  theme={dracula}
+  code={require("!raw-loader!./code-samples/package-jstui.js")}
+  steps={[
+    { notes: "package.json" },
+    { lines: [2], notes: "Package name" },
+    { lines: [3], notes: "Package version" },
+    { lines: [4], notes: "Package type" }
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Setup package jst-common"
+  lang="bash"
+  showNumbers={false}
+  theme={dracula}
+  code={require("!raw-loader!./code-samples/package-jstcommon.js")}
+  steps={[
+    { notes: "package.json" },
+    { lines: [2], notes: "Package name" },
+    { lines: [3], notes: "Package version" },
+    { lines: [4], notes: "Package type" }
+  ]}
+/>
+
+---
+
+# Demo 👨‍💻
+
+---
+
+# Conclusion
+
+## Thanks for your time!

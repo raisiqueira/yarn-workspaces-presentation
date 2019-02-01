@@ -1,0 +1,22 @@
+{
+  "name": "yarn-workspaces-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.js",
+    "build": "mdx-deck build deck.js"
+  },
+  "keywords": [],
+  "author": "Raí Siqueira <rai93siqueira@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "file-loader": "^2.0.0",
+    "mdx-deck": "^1.8.2",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^1.0.0"
+  },
+  "dependencies": {
+    "prism-react-renderer": "^0.1.5"
+  }
+}
